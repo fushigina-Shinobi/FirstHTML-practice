@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    background-color: rgb(97 186 195 / 30%);
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+.main-nav {
+    text-align: end;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 22fr 2fr 2fr 2fr;
+    padding: 20px;
+    padding-right: 2rem;
+    background-color: rgb(0 0 0 / 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Logo img {
+    position: absolute;
+    z-index: 1;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 36px;
+    box-shadow: rgb(255 255 255 / 50%) -7px -15px 50px 16px;
+}
+
+.Welcome {
+    display: flex;
+    position: absolute;
+    color: white;
+    left: 110px;
+    top: 320px;
+    font-family: 'Lato', sans-serif;
+}
+
+.bodyimage img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 99vh;
+    width: 99vw;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    
+}
+
+.Message .greetingmessage h4, h5 {
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.subfooter {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80px 80px 80px 80px;
+    padding: 20px 20px;
+    top: 98vh;
+    font-size: 20px;
+    background-color: rgb(0 0 0 / 0.2);
+}
+
+.main-nav h3 a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.main-nav h3 a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+#Home, #Projects, #Contact, #Gallery {
+    cursor: pointer;   
+}
+
+.Message {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    top: 137px;
+    left: 104px;
+    color: white;
+    font-family: serif;
+    font-size: 5rem;
+}
+
+.Copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 0px;
+    top: 95vh;
+    justify-self: center;
+    color: white;
+    margin-left: 11px;
+
+}
+
+.kishore {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    height: 26rem;
+    position: absolute;
+    border-radius: 166px;
+    left: 53rem;
+    top: 7rem;
+    box-shadow: rgb(255 255 255 / 29%) 11px 14px 47px;
+}
+
+
+/*------------------------------ Contact form ------------------------------*/
+
+.contact-form {
+    position: sticky;
+    right: 50%;
+    left: 35%;
+    top: 25%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 0;
+
+}
+
+/* section.contact-form {
+    box-shadow: rgb(255 255 255 / 29%) 11px 14px 47px;
+    border: 1px solid white;
+} */
+
+.contact-title {
+    margin: auto;
+    width: 380px;
+    padding: 5px 0px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(0 0 0 / 0.3);
+    border-bottom: 1px solid #fff;
+  }
+  
+  .contact-title h2 {
+    text-align: center;
+    color: #ede;
+    letter-spacing: 2px;
+  }
+  
+  .name-contact {
+    margin: auto;
+    width: 380px;
+    padding-top: 20px;
+    background: #fff;
+    background-color: rgb(0 0 0 / 0.3);
+    color: white;
+  }
+  
+  .message-contact {
+    margin: auto;
+    width: 380px;
+    padding-top: 15px;
+    background: #fff;
+    background-color: rgb(0 0 0 / 0.3);
+    color: white;
+  }
+  
+  .box-size {
+    margin-left: 5%;
+    width: 90%;
+    height: 30px;
+    font-size: 14px;
+    border: 0px;
+    border-radius: 4px;
+    border: .2px solid #d0d0d0;
+    background: #e2e2e2;
+  }
+  
+  .submit-size {
+    margin-left: 5%;
+    width: 90%;
+    height: 50px;
+    font-size: 18px;
+    border: 0px;
+  }
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    resize: vertical;
+  }
+  
+  label{
+    padding-left: 21px;
+  }
+  .submit-contact {
+    margin: auto;
+    width: 380px;
+    padding-top: 10px;
+    border-radius: 0px 0px 8px 8px;
+    background: #fff;
+    text-align: center;
+    background-color: rgb(0 0 0 / 0.3);
+  }
+  
+  .msg-size {
+    margin-left: 5%;
+    width: 89%;
+    height: 100px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: .2px solid #d0d0d0;
+    background: #e2e2e2;
+  }
+  
+  .submit-button {
+    color: #fff;
+    background: rgb(0 0 0 / 0.3);
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    font-family: Arial;
+    border: 0px;
+    border-radius: 8px;
+    padding: 6px 21px;
+    width: 23%;
+    height: 90%;
+    cursor: pointer;
+  }
+  
+  
