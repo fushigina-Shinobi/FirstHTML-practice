@@ -16,23 +16,50 @@ html {
 }
 
 .main-nav {
-    text-align: end;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: grid;
+    z-index: 2;
+    border-bottom: 1px solid white;
     grid-template-columns: 1fr 22fr 2fr 2fr 2fr;
-    padding: 20px;
-    padding-right: 2rem;
+    padding: 0.75rem 2rem;
+    /* padding-right: 2rem; */
     background-color: rgb(0 0 0 / 0.1);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#Logo img {
-    position: absolute;
-    z-index: 1;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 36px;
-    box-shadow: rgb(255 255 255 / 50%) -7px -15px 50px 16px;
+.main-nav .nav-link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;   
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.main-nav .nav-link:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+#logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 2rem;
+    /* box-shadow: rgb(255 255 255 / 50%) -7px -15px 50px 16px; */
+}
+
+#logo img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .Welcome {
@@ -44,20 +71,32 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-.bodyimage img {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    height: 99vh;
-    width: 99vw;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    
+.body-image {
+  height: 90vh;
+  position: relative;
+  /* height: 90vh; */
+  /* background-image: url('/images/image1.jpg'); */
+  
+  /* z-index: 2; */
+  /* display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 99vh;
+  filter: blur(0.375rem);
+  width: 99vw;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+    -ms-filter: blur(5px); */
+  }
+.body-image .hero-image {
+  filter: blur(0.375rem);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
 }
-
 .Message .greetingmessage h4, h5 {
     font-weight: 100;
     font-family: 'Lato', sans-serif;
@@ -77,20 +116,7 @@ html {
     background-color: rgb(0 0 0 / 0.2);
 }
 
-.main-nav h3 a {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
 
-.main-nav h3 a:hover {
-    color: #666;
-    text-decoration: underline;
-}
-
-#Home, #Projects, #Contact, #Gallery {
-    cursor: pointer;   
-}
 
 .Message {
     display: flex;
