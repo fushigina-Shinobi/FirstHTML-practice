@@ -1,2 +1,2 @@
 # KishorePortfolio
- Landing Page using HTML5 & CSS3
+ Landing Page using HTML5 & some CSS3
